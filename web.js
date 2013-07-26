@@ -8,10 +8,7 @@ app.get('/', function(request, response) {
   response.send(buff.toString());
 });
 
-app.get('/css/bootstrap.css', function(request, response) {
-    var buff = fs.readFileSync("css/bootstrap.css");
-    response.send(buff.toString());
-});
+
 
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
